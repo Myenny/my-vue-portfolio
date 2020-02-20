@@ -1,8 +1,5 @@
 <template>
-  <v-app id="inspire">
-    <v-toolbar dense fixed color="black">
-      <v-toolbar-title class="white--text" v-text="title"></v-toolbar-title>
-    </v-toolbar>
+  <v-app>
     <v-content>
       <section>
         <v-parallax src="@/assets/section.jpg" height="600">
@@ -103,20 +100,6 @@
           </v-layout>
         </v-container>
       </section>
-
-      <v-footer color="blue darken-2">
-        <v-layout row wrap align-center>
-          <v-flex xs12>
-            <div class="white--text ml-4">
-              Made with
-              <v-icon class="red--text">mdi-heart</v-icon>by
-              <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and
-              <a class="white--text" href="https://github.com/myenny">Michael Yenny</a>
-            </div>
-          </v-flex>
-        </v-layout>
-      </v-footer>
     </v-content>
   </v-app>
 </template>
@@ -127,7 +110,7 @@ export default {
     source: String
   },
   data: () => ({
-    title: "Michael Yenny"
+
   })
 };
 </script>
